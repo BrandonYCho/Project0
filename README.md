@@ -1,8 +1,8 @@
-#### Project0
+### Project0
 Project0 aka "spoofify" is hopefully the start of a longer term project. 
-The current implementation (3/16/2022) is a placeholder for when I am able to interface with the Spotify API. This will allow me to retrieve all the data I need without having to rely on third party apps. Currently, users are able to import csv files that have been gotten from Exportify (https://watsonbox.github.io/exportify/) and store them in a database. There is a main database that holds all music, then there is a User Library for each individual user to store their music. This serves as a backup and eventually, when I implement a write to CSV/JSON, the user will be able to export their library and import to any other cloud music streaming service. you can store libraries for multiple users and view the libraries for each.
+The current implementation (3/16/2022) is a placeholder for when I am able to interface with the Spotify API. This will allow me to retrieve all the data I need without having to rely on third party apps. Currently, users are able to import csv files that have been gotten from Exportify (https://watsonbox.github.io/exportify/) and store them in a database. There is a main database that holds all music, then there is a User Library for each individual user to store their music. This serves as a backup and eventually, when I implement a write to CSV/JSON, the user will be able to export their library and import to any other cloud music streaming service. You can store libraries for multiple users and view the libraries for each.
 
-#### Details
+### Details
 ### Project 0
 A Scala CLI (Command Line Interface) application.  Data should be parsed from a CSV OR JSON file and persisted to  MySQL. The functionality of the application beyond that is up to you, but here are a few suggestions:
 - journal app
