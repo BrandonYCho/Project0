@@ -9,7 +9,7 @@ object dbView {
         s"""
            |SELECT Title,Artist,Album,Duration,Genre FROM musiclibrary.musicdata
            |INNER JOIN musiclibrary.UserLibrary ON musiclibrary.musicdata.TrackID = musiclibrary.userlibrary.TrackID
-           |WHERE musiclibrary.userlibrary.UserName = "$user";
+           |WHERE musiclibrary.userlibrary.UserName = "$user" ORDER BY Title;
            |""".stripMargin
 
       val resultSet = stmt.executeQuery(viewSQLUL)

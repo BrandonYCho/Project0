@@ -60,7 +60,35 @@ class Menu {
         println("Getting things ready...")
         Thread.sleep(3000)
         insertMusicData(readCSV(filePath),user)
-      }
+        Thread.sleep(1000)
+
+        println(
+          """
+            ||----------------------------------|
+            ||      Would you like to view      |
+            ||      your updated library?       |
+            ||----------------------------------|
+            || 1 -> Yes                         |
+            ||----------------------------------|
+            || 0 -> No                          |
+            ||----------------------------------|
+            |""".stripMargin)
+
+        var decision = readLine("Enter input here: ")
+        if (decision.toInt == 1) {
+            userLibraryView(user)
+            readLine()
+            decision = "0"
+          }
+        else if (decision.toInt == 0) {
+          println("Goodbye!")
+          sys.exit()
+        }
+        else {
+            println("That is not a valid input")
+            decision = readLine("Please try again: ")
+          }
+        }
 
       case 2 => { // View User Library
         userLibraryView(user)
@@ -75,15 +103,15 @@ class Menu {
       case 4 => { // Change User
         println(
           """
-            |----------------------------------|
-            |             Spoofify             |
-            |----------------------------------|
-            | 1 -> Create New User             |
-            |----------------------------------|
-            | 2 -> Use Existing User           |
-            |----------------------------------|
-            | 0 -> Exit                        |
-            |----------------------------------|
+            ||----------------------------------|
+            ||             Spoofify             |
+            ||----------------------------------|
+            || 1 -> Create New User             |
+            ||----------------------------------|
+            || 2 -> Use Existing User           |
+            ||----------------------------------|
+            || 0 -> Exit                        |
+            ||----------------------------------|
             |""".stripMargin)
         val newInput = readInt()
         val menu = new Menu
