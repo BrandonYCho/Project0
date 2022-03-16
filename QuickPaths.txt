@@ -1,0 +1,16 @@
+// You can copy paste these paths to test out the program with CSV files stored in src/main/resources/CSV/
+
+src/main/resources/CSV/acoustic_love.csv
+src/main/resources/CSV/broken_heart.csv
+src/main/resources/CSV/butter.csv
+src/main/resources/CSV/deep_house_2022.csv
+src/main/resources/CSV/electronic_music.csv
+src/main/resources/CSV/have_a_great_day!.csv
+src/main/resources/CSV/lush_lofi.csv
+src/main/resources/CSV/pop_punk_powerhouses.csv
+src/main/resources/CSV/pop_punk's_not_dead.csv
+src/main/resources/CSV/relax_&_unwind.csv
+src/main/resources/CSV/rock_mix.csv
+src/main/resources/CSV/the_sweet_suite.csv
+src/main/resources/CSV/today's_top_hits.csv
+src/main/resources/CSV/your_favorite_coffeehouse.csv
